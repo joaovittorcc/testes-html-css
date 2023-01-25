@@ -41,80 +41,72 @@ main {
     padding: 20px;
 }
 
-#m1{
-    margin-top:40px ;
-    position: absolute;
-    top: 50%;
-    left: 17%;
-    transform: translate(-80%, 55%);
-}
 
-a#l1 {
-    color: white;
-    font-size: 3em;
-    font-family: 'Bebas Neue', cursive;
-    text-decoration: none;
-    transition-duration: 1s;
-}
-
-aside#a1:hover{
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.616), rgb(0, 0, 0));
-    text-decoration: underline;
-
-}
-
-#a1 {
+div#d1 > img {
     display: block;
-    text-align: center;
-    border: 4px solid rgb(146, 19, 231);
-    border-radius: 20px;
-    width: 350px;
-    padding: 15px;
-    margin: auto;
-    margin-top: 50px;
     position: absolute;
     top: 50%;
-    left: 2%;
+    left: -2%;
     transform: translate(50%, 59%);
 }
 
-#m2{
-    margin-top:40px ;
-    position: absolute;
-    top: 50%;
-    left: 17%;
-    transform: translate(-80%, 180%);
-}
-
-a#l2 {
+div#d1 > a {
+    max-width: 310px;
     color: white;
     font-size: 3em;
     font-family: 'Bebas Neue', cursive;
     text-decoration: none;
-    transition-duration: 1s;
-}
-
-aside#a2:hover{
-    background-image: linear-gradient(to left, #010101, #69c9d0, #ee1d51);
-    text-decoration: underline;
-}
-
-#a2 {
-    display: block;
-    text-align: center;
-    border: 4px solid rgb(146, 19, 231);
-    border-radius: 20px;
-    width: 350px;
-    padding: 15px;
-    margin: auto;
-    margin-top: 50px;
     position: absolute;
+    border: 4px solid rgb(146, 19, 231);
+    text-align: center;
+    border-radius: 20px;
+    padding: 15px;
+    width: 350px;
     top: 50%;
     left: 2%;
+    transform: translate(50%, 79%);
+    transition-duration: 1s;
+}
+div#d1 > a:hover {
+    transition-duration: 0.5s;
+    text-decoration: underline;
+    color: black;
+    background-image: linear-gradient(to left,white, black);
+}
+
+div#d2 > img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -2%;
     transform: translate(50%, 200%);
 }
 
-div#d1 > img {
+div#d2 > a {
+    max-width: 310px;
+    color: white;
+    font-size: 3em;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    position: absolute;
+    border: 4px solid #9213e7;
+    text-align: center;
+    border-radius: 20px;
+    padding: 15px;
+    width: 350px;
+    top: 50%;
+    left: 2%;
+    transform: translate(50%, 240%);
+    transition-duration: 1s;
+}
+div#d2 > a:hover {
+    transition-duration: 0.5s;
+    text-decoration: underline;
+    background-image: linear-gradient(to right,#69c9d0 20%, #ee1d52, #000000c5 80%);
+    color: black;
+}
+
+div#d3 > img {
     display: block;
     position: absolute;
     top: 50%;
@@ -122,7 +114,8 @@ div#d1 > img {
     transform: translate(50%, 358%);
 }
 
-div#d1 > a {
+div#d3 > a {
+    max-width: 310px;
     color: white;
     font-size: 3em;
     font-family: 'Bebas Neue', cursive;
@@ -138,9 +131,10 @@ div#d1 > a {
     transform: translate(50%, 393%);
     transition-duration: 1s;
 }
-div#d1 > a:hover {
-    transition-duration: 1s;
+div#d3 > a:hover {
+    transition-duration: 0.5s;
     text-decoration: underline;
     background-image: linear-gradient(to left,#983AD8, #F03756, #EEAC37);
+    color: black;
 }
 
