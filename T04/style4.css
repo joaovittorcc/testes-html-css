@@ -1,0 +1,51 @@
+body {
+    background-color: rgba(255, 68, 0, 0.76);
+}
+
+.conteiner > * {
+    background-color: rgb(255, 255, 255, 0.25);
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 150ms ease;
+}
+
+.conteiner > *:hover {
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+body.conteiner {
+    display: flex;
+    flex-direction: column;
+    min-height: 96vh;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+}
+
+.main {
+    flex: 1;
+}
+
+
+
+.sidebar, .ads {
+    flex-basis: 100px;
+}
+
+@media (min-width: 56.25em) {
+    /*900px*/
+    .content {
+        flex-direction: row;
+    }
+    .sidebar {
+    order: -1;
+}
+}

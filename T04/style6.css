@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgba(255, 68, 0, 0.76);
+}
+
+.conteiner > * {
+    background-color: rgb(255, 255, 255, 0.25);
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 150ms ease;
+}
+
+.conteiner > *:hover {
+    background-color: rgb(255, 255, 255, 0.4);
+}
+.weather {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.weather > div {
+    margin: 10px 0;
+
+}
+
+.weather-period {
+    flex: 1;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.weather-icon {
+    height: 50px;
+    min-width:50px;
+    width: 50px;
+}
+
+.weather-min {
+    font-weight: bold;
+}
+
+.weather-min::after {
+    content: ' - ';
+}
+
+@media (min-width: 37.5em) { /*800px*/
+    .weather {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .weather > div {
+        margin: 0 50px;
+    }
+    .weather-period {
+        font-size: 1.5rem;
+        min-width: 50px;
+        text-align: left;
+    }
+
+    .weather-minmax {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .weather-min::after {
+        content: none;
+    }
+}
+
+@media (min-width: 56.25em) { /*900px*/
+    .conteiner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .weather {
+        flex-basis: 100px;
+        flex-direction: column;
+    }
+
+    .weather > div {
+        margin: 10px 0px;
+    }
+
+    .weather-period {
+        flex-basis: 100px;
+    }
+
+}

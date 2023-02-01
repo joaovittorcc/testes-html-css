@@ -1,0 +1,25 @@
+body {
+    background-color: darkred;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.load {
+    animation: load 4000000s infinite;
+    width: 100px;
+    height: 100px;
+    border-top: 10px solid black;
+    border-bottom: 10px solid white;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    border-radius: 50%;
+}
+
+@keyframes load {
+    to {
+        transform: rotate(10000000turn);
+    }
+    
+}

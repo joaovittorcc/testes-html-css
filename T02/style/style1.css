@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url(../imagens/fundo.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    position: relative;
+}
+
+img {
+    animation: move 3s  infinite alternate;
+    border-radius: 50%;
+    width: 100px;
+    display: block;
+    position: absolute;
+    top: 40px;
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(0);
+    }
+
+    
+    
+    100%{
+        transform: translateX(86.7vw);
+    }
+    
+}
+
+

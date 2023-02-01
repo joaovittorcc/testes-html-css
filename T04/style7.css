@@ -1,0 +1,41 @@
+body {
+    background-color: rgba(255, 68, 0, 0.76);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.conteiner > * {
+    background-color: rgb(255, 255, 255, 0.25);
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 150ms ease;
+}
+
+.conteiner > *:hover {
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+.conteiner {
+    display: flex;
+    height: 100vh;
+}
+
+.accordion {
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    background: no-repeat center center;
+    background-size: cover;
+    transition: all 600ms ease-in-out;
+
+}
+
+.accordion:hover {
+    flex-basis: 65vw;
+}

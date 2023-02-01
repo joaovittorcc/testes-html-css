@@ -1,0 +1,38 @@
+body {
+    background-color: rgba(255, 68, 0, 0.76);
+}
+
+.conteiner > * {
+    background-color: rgb(255, 255, 255, 0.25);
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 150ms ease;
+}
+
+.conteiner > *:hover {
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card {
+    width: 250px;
+    padding: 0px;
+    text-align: left;
+}
+
+.card-content {
+    padding: 0px 20px;
+}
+
+/*.box {
+    width: 200px;
+    }
